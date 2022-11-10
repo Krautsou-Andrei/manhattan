@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" defer></script>
+    <script src="./js/slick.min.js" defer></script>
+    <script src="./js/carousel.js" defer></script>
+    <title>Manhattan</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="header__container container">
+        <div class="container-section">
+          <nav class="header__menu-burger menu-burger">
+            <ul class="menu-burger__list">
+              <li class="menu-burger__item"><a href="#" class="menu-burger__link link">О проекте</a></li>
+              <li class="menu-burger__item"><a href="#" class="menu-burger__link link">Преимущества</a></li>
+              <li class="menu-burger__item"><a href="#" class="menu-burger__link link">Окружение</a></li>
+              <li class="menu-burger__item"><a href="#" class="menu-burger__link link">Предложения</a></li>
+            </ul>
+          </nav>
+          <div class="header__top header-top">
+            <a href="#" class="header__logo logo">
+              <span class="visually-hidden">Homepage</span>
+              <span class="logo__text">Manhattan</span>
+            </a>
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="#" class="menu__link link">О проекте</a></li>
+                <li class="menu__item"><a href="#" class="menu__link link">Преимущества</a></li>
+                <li class="menu__item"><a href="#" class="menu__link link">Окружение</a></li>
+                <li class="menu__item"><a href="#" class="menu__link link">Предложения</a></li>
+              </ul>
+            </nav>
+            <div class="header__phone phone">
+              <a class="phone__text phone-text" href="tel:+74955873660"> +7 (495) 587 36 60 </a>
+              <div class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="header__info header-info">
+            <h1 class="header-info__heading heading--xxl">Тихий дом в самом центре Москвы</h1>
+            <div class="header-info__button button">
+              <span class="visually-hidden">Кнопка</span>
+              <a href="#order" class="button__text button--header">Записаться на просмотр</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="main">
+      <section class="main__container project">
+        <div class="container">
+          <div class="project__info info container-section">
+            <div class="container-section__block">
+              <h2 class="info__heading heading--xl">О проекте</h2>
+              <div class="info__description description">
+                <p class="description__text">
+                  Вдохновением для создания концепции послужила исходная архитектура самого Дома: геометричные элементы парадного фасада, приковывающие к себе внимание, светлые и просторные помещения с пятиметровыми потолками, сразу отсылают к
+                  эстетике американского классического ар-деко.
+                </p>
+              </div>
+            </div>
+            <div class="container-section__second">
+              <picture class="info__image image">
+                <source srcset="./image/image-info-1024.jpg" media="(max-width: 1024px)" />
+                <img srcset="./image/image-info.jpg" alt="Картинка проекта" class="image__project" />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="project__benefits benefits container-section">
+            <div class="container-section__block">
+              <h2 class="benefits__heading heading--xl">Преимущества</h2>
+              <div class="benefits__conteiner description__text">
+                <ul class="benefits__list">
+                  <li class="benefits__item">Уникальная архитектура</li>
+                  <li class="benefits__item">Видовые характеристики</li>
+                  <li class="benefits__item">Высота потолков до 5м</li>
+                  <li class="benefits__item">Фитнес зона</li>
+                </ul>
+                <ul class="benefits__list">
+                  <li class="benefits__item">Просторные террассы</li>
+                  <li class="benefits__item">Собственный ритейл</li>
+                  <li class="benefits__item">Приватность</li>
+                  <li class="benefits__item">Детская зона</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="project__location location container-section">
+            <div class="container-section__block">
+              <div class="location__wrap">
+                <h2 class="location__heading heading--xl">Окружение</h2>
+                <div class="location__description description">
+                  <p class="description__text">ЦАО Пресненский район: Москва-Сити, Центр международной торговли, известные театры, музеи, лучшие рестораны.</p>
+                  <p class="description__text">Центр Москвы - центр притяжения успеха, вдохновения и силы. Идеальное расположение в тихом переулке обеспечивает ощущение клубности и приватности владельцам дома<span class="px320"></span> Manhattan.</p>
+                </div>
+              </div>
+              <div class="location__image image">
+                <span class="visually-hidden">Адрес ул.Климашкина 16 </span>
+
+                <img src="./image/image-location.jpg" alt="Картинка расположения на карте" class="image__location" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="project__style style container-section">
+            <div class="container-section__block">
+              <h2 class="style__heading heading--xl">Стиль</h2>
+              <div class="style__description description">
+                <p class="description__text">
+                  В основе интерьеров Дома Manhattan приоритетными являются эстетика,<span class="px640"></span> где видимая роскошь сочетается <span class="px640"></span> с комфортом, в неё идеально вписываются любые технические приборы<span
+                    class="px1024"></span>
+                  и устройства. Это позволяет создавать действительно актуальные  и модные решения в рамках устоявшейся классики.
+                </p>
+              </div>
+            </div>
+            <div class="container-section__second">
+              <div class="style__image image">
+                <img src="./image/image-style.jpg" alt="Картинка стиля проекта" class="image__style" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="project__offers offers container-section">
+            <span class="visually-hidden">Предложения</span>
+            <h2 class="offers__heading heading--xl">Семь этажей и всего 90 апартаментов</h2>
+            <div class="offers__item item container-section__second">
+              <div class="container-section__block">
+                <div class="item-container">
+                  <h3 class="item__heading heading--md">Апартаменты</h3>
+                  <div class="item__description description">
+                    <p class="description__text">Со второго по шестой этаж гармонично спланированы апартаменты различной площади от 35 до 80 м2, жителям каждого из которых гарантирована максимальная приватность и комфорт.</p>
+                  </div>
+                  <div class="offers__button button">
+                    <span class="visually-hidden">Кнопка</span>
+                    <a href="#order" class="button__text button--offers">Узнать стоимость</a>
+                  </div>
+                </div>
+                <div class="item-container item-container--first">
+                  <div class="offers__image image">
+                    <img src="./image/image-offers-1.jpg" alt="Картинка апартаментов" class="image__offers" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="offers__item item container-section__second">
+              <div class="container-section__block">
+                <div class="item-container">
+                  <h3 class="item__heading heading--md">Пентхаусы</h3>
+                  <div class="item__description description">
+                    <p class="description__text">На седьмом этаже Дома предусмотрено несколько пентхаусов. В распоряжении их жителей: высокие полотки 5,5 метров, свободная планировка для создания стильного, торжественного интерьера.</p>
+                  </div>
+                  <div class="offers__button button">
+                    <span class="visually-hidden">Кнопка</span>
+                    <a href="#order" class="button__text button--offers">Узнать стоимость</a>
+                  </div>
+                </div>
+                <div class="item-container item-container--second">
+                  <div class="offers__image image">
+                    <img src="./image/image-offers-2.jpg" alt="Картинка пентхауса" class="image__offers" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="project__additional-benefits additional-benefits">
+            <div class="container-section">
+              <h2 class="additional-benefits__heading heading--lg">Уровень комфорта зачастую определяет уровень жизни. Поэтому, мы продумали каждую деталь.</h2>
+              <div class="container-section__second"></div>
+            </div>
+          </div>
+        </div>
+        <article class="project__slider container slider">
+          <div class="slider__item">
+            <img src="./image/image-additional-benefits.jpg" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./image/image-additional-benefits.jpg" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./image/image-additional-benefits.jpg" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./image/image-additional-benefits.jpg" alt="" />
+          </div>
+        </article>
+        <div class="container">
+          <div class="project__characteristics characteristics container-section">
+            <h2 class="characteristics__heading heading--xl">Комфорт и безопасность</h2>
+            <div class="container-section__second">
+              <ul class="characteristics__list" role="list">
+                <li class="characteristics__item item container-section__block">
+                  <h3 class="item__heading heading--sm">Сервис</h3>
+                  <p class="item__description">Две зоны ресепшн 24/7</p>
+                </li>
+                <li class="characteristics__item item container-section__block">
+                  <h3 class="item__heading heading--sm">Паркинг</h3>
+                  <p class="item__description">Наземный, охраняемый паркинг</p>
+                </li>
+                <li class="characteristics__item item container-section__block">
+                  <h3 class="item__heading heading--sm">Система безопасности</h3>
+                  <p class="item__description">Видеонаблюдение, сигнализация по периметру дома, современная система контроля доступа</p>
+                </li>
+                <li class="characteristics__item item container-section__block">
+                  <h3 class="item__heading heading--sm">Лифты</h3>
+                  <p class="item__description">Бесшумные премиальные лифты OTIS</p>
+                </li>
+                <li class="characteristics__item item container-section__block">
+                  <h3 class="item__heading heading--sm">Территория</h3>
+                  <p class="item__description">Огороженная и охраняемая территория</p>
+                </li>
+                <li class="characteristics__item item container-section__block">
+                  <h3 class="item__heading heading--sm">Окна</h3>
+                  <p class="item__description">Высококачественные стеклопакеты с повышенным уровнем шумоизоляции</p>
+                </li>
+                <li class="characteristics__item item container-section__block">
+                  <h3 class="item__heading heading--sm">Пожарная сигнализация</h3>
+                  <p class="item__description">Автоматическая система пожаротушения в каждом апартаменте</p>
+                </li>
+                <li class="characteristics__item item container-section__block">
+                  <h3 class="item__heading heading--sm">Кондиционирование</h3>
+                  <p class="item__description">Центральная система кондиционирования</p>
+                </li>
+                <li class="characteristics__item item container-section__block">
+                  <h3 class="item__heading heading--sectiosm">Вентиляция</h3>
+                  <p class="item__description">Система принудительной приточно-вытяжной вентиляции</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="container-section">
+          <div class="footer-top">
+            <div class="container-section__block">
+              <section class="footer__section">
+                <h2 class="form__heading heading--md"><span class="heading--active">Оставить заявку</span><span class="heading--order"> Спасибо за обращение!</span></h2>
+
+                <form action="" class="footer__form form">
+                  <fieldset class="form__fieldset fieldset">
+                    <legend class="visually-hidden">Форма заявки</legend>
+                    <input class="fieldset__input form-text" type="text" placeholder="Имя" />
+                    <input class="fieldset__input form-number" type="number" placeholder="Телефон" />
+                  </fieldset>
+
+                  <label class="form__check-box check-box">
+                    <input class="check-box__input" type="checkbox" checked /><span class="check-style"></span>
+                    Даю согласие на обработку персональных данных
+                  </label>
+                  <p class="form__message">Наш менеджер свяжется с Вами в течение 15 минут.</p>
+                  <div class="form__button">
+                    <button id="order" class="button-order" type="button" name="type" value="send">
+                      <span class="button__text button--footer button--active">Оставить заявку</span>
+                      <span class="button__text button--footer button--disabled">Отправить еще</span>
+                    </button>
+                  </div>
+                </form>
+              </section>
+              <section class="footer__section">
+                <h2 class="address__heading heading--md">Контакты</h2>
+                <address class="address">
+                  <div class="address__project address-project">
+                    <h3 class="address-project__heading heading--sm">Адрес</h3>
+                    <ul class="address-project__list">
+                      <li class="address-project__item"><span class="address-project__location address">ул. Климашкина, д. 16</span></li>
+                      <li class="address-project__item"><a class="address-project__mail mail" href="mailto:manhattan@gmail.ru">manhattan@gmail.ru</a></li>
+                      <li class="address-project__item"><a class="address-project__phone phone" href="tel:+74955873660">+7 (495) 587 36 60</a></li>
+                    </ul>
+                  </div>
+                  <div class="address__social social">
+                    <h3 class="social__heading heading--sm">Соцсети</h3>
+                    <ul class="social__list">
+                      <li class="social__item"><a href="" class="social__link">Telegram</a></li>
+                      <li class="social__item"><a href="" class="social__link">Twitter</a></li>
+                      <li class="social__item"><a href="" class="social__link">Pinterest</a></li>
+                    </ul>
+                  </div>
+                </address>
+              </section>
+            </div>
+          </div>
+          <section class="footer-bottom">
+            <nav class="footer__menu footer-menu">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><a href="" class="footer-menu__link">Пресса</a></li>
+                <li class="footer-menu__item"><a href="" class="footer-menu__link">Карьера</a></li>
+                <li class="footer-menu__item"><a href="" class="footer-menu__link">Политика конфиденциальности</a></li>
+              </ul>
+            </nav>
+            <div class="fooret__copyright copyright">
+              <a class="copyright__link" href="#">Разработка сайта UPROCK</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
