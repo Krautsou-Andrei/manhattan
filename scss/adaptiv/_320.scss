@@ -1,0 +1,265 @@
+@media only screen and (max-width: 320px) {
+  .header {
+    background-image: url("../image/header-bg-320.jpg");
+  }
+  .heading--xxl {
+    @include heading--xxl(1.875rem, 1, 600);
+  }
+
+  .heading--xl {
+    @include heading--xl(1.625rem, 1.1923, 700);
+  }
+
+  .heading--sm {
+    @include heading--sm($line-height: 1.2222);
+  }
+
+  .heading--md {
+    @include heading--md(1.125rem, 1.2222, 600);
+  }
+
+  .heading--lg {
+    @include heading--lg(1.375rem, 1.2273, 500);
+  }
+
+  .container {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    + .slider {
+      padding-left: 0.625rem;
+    }
+  }
+
+  .container-section__second {
+    padding-top: 1.875rem;
+  }
+
+  .style {
+    .container-section__second {
+      padding-top: 2.5rem;
+    }
+  }
+
+  .container-section__block {
+    display: block;
+  }
+
+  .phone__text {
+    display: none;
+  }
+  .header,
+  .project__info,
+  .project__benefits,
+  .project__location,
+  .project__style,
+  .project__offers,
+  .project__slider,
+  .project__characteristics {
+    margin-bottom: 5rem;
+  }
+
+  .location__description,
+  .location__image,
+  .info__description,
+  .style__description {
+    padding-top: 1.25rem;
+  }
+
+  .benefits__conteiner {
+    display: block;
+    padding-top: 1.875rem;
+  }
+
+  .benefits__conteiner,
+  .benefits__heading {
+    &.description__text {
+      font-size: 1rem;
+      line-height: 1.3125;
+    }
+  }
+
+  .benefits__list + .benefits__list {
+    padding-top: 1.110625rem;
+  }
+
+  .location {
+    .location__description {
+      .px320 {
+        display: block;
+      }
+    }
+  }
+
+  .style__description {
+    .description__text {
+      .px640 {
+        display: inline;
+      }
+      .px1024 {
+        display: inline;
+      }
+    }
+  }
+
+  .offers {
+    .container-section__block {
+      display: flex;
+      gap: 1.875rem;
+    }
+  }
+
+  .offers,
+  .additional-benefits,
+  .characteristics {
+    .container-section__second {
+      padding-top: 3.125rem;
+    }
+  }
+
+  .item-container--second {
+    order: -1;
+  }
+
+  .offers__item .item__heading {
+    margin-bottom: 0.9375rem;
+  }
+
+  .offers__item .item__description {
+    margin-bottom: 1.5625rem;
+  }
+
+  .offers__button,
+  .button-order {
+    width: 100%;
+  }
+
+  .characteristics .item__heading {
+    padding-bottom: 0.625rem;
+  }
+
+  .characteristics__item {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .footer-top {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    &.order {
+      padding-bottom: 2.5rem;
+    }
+  }
+  .form__heading {
+    padding-bottom: 2.3125rem;
+    &.order {
+      padding-bottom: 0.625rem;
+    }
+  }
+
+  .footer {
+    .fieldset__input::placeholder {
+      font-size: 0.6875rem;
+    }
+
+    .heading--sm {
+      @include heading--sm(1.125rem, 1.2222, 600, $text-color-primary);
+    }
+    .heading--md {
+      @include heading--md(1.125rem, 1.2222, 600, $text-color-primary);
+    }
+  }
+
+  .form__check-box {
+    margin-bottom: 3.25rem;
+  }
+
+  .check-box {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+
+    padding-bottom: 3.25rem;
+    gap: 1rem;
+  }
+
+  .footer-menu__list {
+    justify-content: start;
+  }
+
+  .form__check-box {
+    margin-top: 1.85rem;
+    margin-bottom: 2.125rem;
+  }
+  .check-style {
+    margin-top: 0.25rem;
+  }
+  .address {
+    display: block;
+  }
+
+  .address__heading {
+    padding-top: 2.5rem;
+
+    padding-bottom: 1.25rem;
+    &.order {
+      padding-top: 13.0625rem;
+    }
+  }
+
+  .social__heading {
+    padding-top: 1.25rem;
+  }
+
+  .footer-menu__list {
+    display: block;
+  }
+
+  .footer-menu__item + .footer-menu__item {
+    padding-top: 0.875rem;
+  }
+
+  .header-top {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .header__info {
+    margin-top: 10.8125rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .header-info__heading {
+    text-align: center;
+    margin-bottom: 11.5rem;
+  }
+  .header-info__button {
+    width: 100%;
+  }
+  .form__message {
+    padding-bottom: 1.5625rem;
+  }
+  .menu-burger {
+    min-height: 35.5rem;
+  }
+
+  .menu-burger__link {
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 1;
+  }
+  .menu-burger__item + .menu-burger__item {
+    padding-top: 1.875rem;
+  }
+
+  .slider .slick-arrow {
+    height: 16.25rem;
+  }
+  .slider__item {
+    img {
+      max-width: 18.75rem;
+    }
+  }
+}

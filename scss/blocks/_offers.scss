@@ -1,0 +1,36 @@
+.item-container--first {
+  order: -1;
+}
+.offers__item .item__heading {
+  margin-bottom: 1.25rem;
+}
+
+.offers__item .item__description {
+  max-width: 29rem;
+  margin-bottom: 2.375rem;
+}
+
+.offers__button {
+  width: 15.625rem;
+  display: block;
+  float: left;
+}
+
+.button--offers {
+  padding-top: 1.125rem;
+  padding-right: 0.3125rem;
+  padding-bottom: 1.1875rem;
+  padding-left: 0.3125rem;
+  border: 0.0625rem solid $border-color-button-secondary;
+  background-color: $bg-color-button-secondary;
+
+  &:hover {
+    background-color: $bg-color-button-primary;
+    color: $text-color-secondary;
+  }
+
+  &:active {
+    background-color: $bg-color-button-active;
+    color: $text-color-primary;
+  }
+}

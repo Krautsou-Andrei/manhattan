@@ -1,0 +1,87 @@
+@media only screen and (max-width: 1024px) {
+  .container-section__second {
+    padding-top: 3.125rem;
+  }
+
+  .container-section__block {
+    gap: 2.5rem;
+  }
+
+  .header,
+  .project__info,
+  .project__benefits,
+  .project__location,
+  .project__style,
+  .project__offers,
+  .project__slider,
+  .project__characteristics {
+    margin-bottom: 9.375rem;
+  }
+  .header-top {
+    padding-top: 2.125rem;
+  }
+
+  .header__info {
+    margin-top: 13.4375rem;
+  }
+
+  .benefits__conteiner {
+    justify-content: space-between;
+  }
+  .benefits__heading,
+  .benefits__conteiner {
+    min-width: 24.25rem;
+  }
+
+  .benefits__item {
+    white-space: nowrap;
+  }
+
+  .location__description {
+    padding-top: 3.125rem;
+  }
+
+  .style__description {
+    .description__text {
+      .px640 {
+        display: inline;
+      }
+      .px1024 {
+        display: block;
+      }
+    }
+  }
+
+  .offers__item .item__description {
+    max-width: 25rem;
+    margin-bottom: 1.5625rem;
+  }
+
+  .footer-top {
+    &.order {
+      padding-bottom: 11.9375rem;
+    }
+  }
+
+  .form__heading {
+    &.order {
+      padding-bottom: 1.875rem;
+    }
+  }
+
+  .form__message {
+    max-width: 19rem;
+  }
+  .slick-track {
+    gap: 1.25rem;
+  }
+
+  .slider .slick-arrow {
+    height: 38.125rem;
+  }
+  .slider__item {
+    img {
+      width: 60rem;
+    }
+  }
+}

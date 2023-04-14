@@ -1,0 +1,213 @@
+.footer {
+  color: $text-color-footer;
+  background-color: $footer-bgcolor;
+
+  a {
+    color: $text-color-footer;
+  }
+
+  .heading--sm {
+    @include heading--sm($color: $text-color-primary);
+  }
+  .heading--md {
+    @include heading--md($color: $text-color-primary);
+  }
+}
+
+.footer__section {
+  align-self: flex-start;
+}
+
+.footer-top {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 0.0625rem solid $border-color;
+  &.order {
+    padding-bottom: 13.375rem;
+  }
+}
+
+//------------------------------ Форма
+.form__heading {
+  padding-bottom: 4rem;
+  &.order {
+    padding-bottom: 1.875rem;
+  }
+}
+
+.heading--order,
+.form__message {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+.heading--active,
+.form__fieldset,
+.form__check-box {
+  &.disabled {
+    display: none;
+  }
+}
+
+.form__fieldset {
+  max-width: 26.25rem;
+}
+
+.fieldset__input {
+  width: 100%;
+  border-bottom: 0.0625rem solid $border-color-opacity;
+  font-weight: 500;
+  line-height: 1.5;
+  color: $text-color-primary;
+}
+
+.fieldset__input + .fieldset__input {
+  padding-top: 2rem;
+}
+
+.form__check-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.check-box {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  cursor: pointer;
+}
+
+.check-box__input {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.check-box__input:focus + .check-style {
+  outline: none;
+  box-shadow: 0 0 0 0.0625rem #cbd6ee;
+}
+
+.check-box__input:checked + .check-style::before {
+  content: "";
+  width: 0.875rem;
+  height: 0.625rem;
+  background-image: url(../image/check-mark.svg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.check-style {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+  flex: 0 0 1.25rem;
+  height: 1.25rem;
+  border: 0.0625rem solid $border-color;
+}
+
+.button-order {
+  width: 16.625rem;
+  min-height: 3.6875rem;
+  text-align: center;
+  padding-left: 0.3125rem;
+  padding-right: 0.3125rem;
+  background: $bg-color-button-primary;
+
+  &:hover {
+    border: 0.0625rem solid $border-color-button-primary;
+    background: transparent;
+
+    .button--footer {
+      color: $text-color-primary;
+    }
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.0625rem #cbd6ee;
+  }
+
+  &:active {
+    background-color: $bg-color-button-active;
+    .button--footer {
+      color: $text-color-primary;
+    }
+  }
+  &.disabled {
+    background: transparent;
+    border: 0.0625rem solid $border-color-button-primary;
+    color: $text-color-primary;
+    &:hover {
+      background: $bg-color-button-active;
+    }
+  }
+}
+
+.button--footer {
+  color: $text-color-secondary;
+}
+
+.button--active {
+  &.disabled {
+    display: none;
+  }
+}
+.button--disabled {
+  display: none;
+  &.active {
+    display: block;
+    color: $text-color-primary;
+  }
+}
+
+.form__message {
+  padding-bottom: 4.0625rem;
+  font-size: 1.125rem;
+  line-height: 1.2778;
+  color: $text-color-primary;
+}
+
+// -----------------------------------Адрес
+.address__heading {
+  padding-bottom: 3.125rem;
+}
+.address {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 9.125rem;
+}
+
+.address-project__list,
+.social__list {
+  padding-top: 0.75rem;
+
+  li + li {
+    padding-top: 0.375rem;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 1.6875rem;
+  padding-bottom: 5.0625rem;
+}
+
+.footer-menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.125rem;
+}

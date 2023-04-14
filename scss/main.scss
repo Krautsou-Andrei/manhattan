@@ -1,0 +1,25 @@
+//base
+@import "./base/fonts";
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/base";
+
+//desctop
+@import "./blocks/header";
+@import "./blocks/info";
+@import "./blocks/benefits";
+@import "./blocks/location";
+@import "./blocks/style";
+@import "./blocks/offers";
+@import "./blocks/additional-benefits";
+@import "./blocks/characteristics";
+@import "./blocks/footer";
+@import "./blocks/carousel";
+//adaptiv
+@import "./adaptiv/1280";
+
+@import "./adaptiv/1024";
+
+@import "./adaptiv/640";
+
+@import "./adaptiv/320";
